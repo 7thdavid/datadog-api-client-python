@@ -1177,6 +1177,13 @@ ip\_prefixes\_apm
    :members:
    :show-inheritance:
 
+ip\_prefixes\_global
+--------------------
+
+.. automodule:: datadog_api_client.v1.model.ip_prefixes_global
+   :members:
+   :show-inheritance:
+
 ip\_prefixes\_logs
 ------------------
 
