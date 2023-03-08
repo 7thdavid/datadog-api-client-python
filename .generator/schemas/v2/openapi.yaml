@@ -356,7 +356,7 @@ components:
         type: integer
     ResourceID:
       description: 'Identifier, formatted as `type:id`. Supported types: `connection`,
-        `dashboard`, `notebook`, `security-rule`, `slo`.'
+        `dashboard`, `notebook`, `security-rule`.'
       example: dashboard:abc-def-ghi
       in: path
       name: resource_id
@@ -17738,9 +17738,7 @@ paths:
 
         - Notebooks: `notebook`
 
-        - Security Rules: `security-rule`
-
-        - Service Level Objectives: `slo`'
+        - Security Rules: `security-rule`'
       operationId: UpdateRestrictionPolicy
       parameters:
       - $ref: '#/components/parameters/ResourceID'
@@ -20790,7 +20788,9 @@ paths:
       - description: 'Comma separated list of product families to retrieve. Available
           families are `all`, `analyzed_logs`,
 
-          `application_security`, `audit_logs`, `serverless`, `ci_app`, `cloud_cost_management`,
+          `application_security`, `audit_logs`, `audit_trail`, `serverless`, `ci_app`,
+          `cloud_cost_management`,
+
           `cspm`, `custom_events`, `cws`, `dbm`, `fargate`,
 
           `infra_hosts`, `incident_management`, `indexed_logs`, `indexed_spans`, `ingested_spans`,
